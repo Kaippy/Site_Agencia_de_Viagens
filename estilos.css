@@ -1,0 +1,340 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Raleway', sans-serif;
+}
+.limitador-sessao{
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 25px;
+}
+/* ------------------------------ topo --------------------------------- */
+header{
+    height: 55px;
+    display: flex;
+    width: 100%;
+}
+.box-topo{
+    display: flex;
+    align-items: center;
+    
+}
+.box-topo img{
+    width: 32px;
+    height: 32px;
+    margin-right: 7px;
+}
+.box-topo p{
+    font-size: 21px;
+    color: #5d15d1;
+    font-weight: bold;
+}
+/* ---------------------------- BOX-1 ------------------------------------- */
+main{
+    background-color: #80808029;
+}
+.sessao-1{
+    background-image: url("assets/imagens/bahia.jpg");
+    background-size: cover;
+    width: 100%;
+    height: auto;
+}
+.topo-form{
+    font-size: 9px;
+    font-weight: 800;
+    color: #ffffff;
+    background-color: #5d15d1;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+.topo-form h2{
+    display: flex;
+    font-size: 15px;
+}
+.topo-form h2::before{
+    content: "";
+    width: 20px;
+    background: url("assets/imagens/aviao.png") no-repeat;
+    background-size: cover;
+    margin-right: 6px;
+    transform: rotate(-45deg);
+}
+.box-1{
+    padding: 50px 30px;
+    
+}
+form{
+    line-height: 35px;
+}
+.corpo-form{
+    background-color: #ffffff;
+    width: 100%;
+    padding: 25px 25px 20px 25px;
+}
+.corpo-form p{
+    font-weight: 900;
+    font-size: 22px;
+    margin: 0 0 15px 0;    
+}
+.box-dir-column{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+input{
+    border: 1px solid #000000;
+}
+.box-dir-column input, .box-dir-column select{
+    padding: 6px 4px;
+}
+.box-dir-row{
+    display: flex;
+}
+.box-dir-row div:nth-child(1){
+    margin-right: 10px;
+}
+.box-dir-row div:nth-child(2){
+    margin-left: 10px;
+}
+.row-wth{
+    display: flex;
+    justify-content: space-between;
+}
+.boxradio-dir-row{
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+}
+.boxradio-dir-row input{
+    width: 15px;
+}
+.boxradio-dir-row div{
+    display: flex;
+    align-items: center;
+    width: 120px;
+}
+.boxradio-dir-row div input:first-of-type{
+    margin-right: 8px;
+}
+.button{
+    color: #ffffff;
+    font-size: 15px;
+    padding: 7px 10px;
+    background-color: #5d15d1;
+    margin-top: 15px;
+    border: none;
+    cursor: pointer;
+}
+/* ----------------------------------- BOX-2 --------------------------------------- */
+.box-titulo-img{
+    line-height: 30px;
+}
+.box-titulo-img h3, .box-anuncio-descricao h4{
+    font-weight: bolder;
+}
+.box-titulo-oferta{
+    margin-bottom: 10px;
+}
+.box-titulo-explore{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.box-ofertas-imagens, .box-anuncio-duas-imagens{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 375px;
+}
+.box-imagem-destaque, .box-anuncio{
+    width: calc(50% - 10px);
+    height: 100%;
+    position: relative;
+}
+.box-imagem-destaque img, .box-anuncio img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.box-ofertas-imagens figure figcaption{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: #ffffff;
+    background-color: #00000050;
+    width: 100%;
+    padding: 5px 10px;
+    font-size: 17px;
+}
+.box-quatro-imagens{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: calc(50% - 10px);
+    height: 100%;
+}
+.box-quatro-imagens figure{
+    width: calc(50% - 10px);
+    height: calc(50% - 10px);
+    margin: 0 6px;
+    position: relative;
+}
+.box-quatro-imagens figure img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.box-anuncio-duas-imagens{
+    height: auto;
+}
+.box-anuncio-descricao{
+    width: 100%;
+    background-color: #ffffff;
+    padding: 20px;
+}
+.box-anuncio-descricao h4{
+    font-size: 16px;
+}
+.box-anuncio-descricao p{
+    font-size: 14px;
+    margin-top: 15px;
+    color: #808080;
+}
+/* ----------------------------------- FOOTER --------------------------------------- */
+.sessao-3{
+    background-color: #5d15d1;
+    color: #ffffff;
+}
+.footer-flex{
+    display: flex;
+    justify-content: space-between;
+    line-height: 30px;
+    padding-top: 15px;
+}
+.footer-flex h4{
+    font-size: 20px;
+    font-weight: bolder;
+    margin-bottom: 15px;
+}
+.footer-flex p{
+    font-size: 15px;
+    font-weight: 500;
+}
+.footer-area{
+    display: flex;
+    flex-direction: column;
+}
+.flex-footerbox p{
+    display: flex;
+    align-items: center;
+}
+.footer-box-1 p:nth-child(1):before{
+    background: url("assets/imagens/local.png") no-repeat;
+    content: "";
+    display: flex;
+    width: 20px;
+    height: 20px;
+    background-size: cover;
+    margin-right: 8px;
+}
+.footer-box-1 p:nth-child(2):before{
+    background: url("assets/imagens/telefone.png") no-repeat;
+    content: "";
+    display: flex;
+    width: 20px;
+    height: 20px;
+    background-size: cover;
+    margin-right: 8px;
+}
+.footer-box-1 p:nth-child(3):before{
+    background: url("assets/imagens/email.png") no-repeat;
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-size: cover;
+    margin-right: 8px;
+}
+.footer-box-2 p:nth-child(1):before{
+    background: url("assets/imagens/fb.png") no-repeat;
+    content: "";
+    display: flex;
+    width: 20px;
+    height: 20px;
+    background-size: cover;
+    margin-right: 8px;
+}
+.footer-box-2 p:nth-child(2):before{
+    background: url("assets/imagens/ig.png") no-repeat;
+    content: "";
+    display: flex;
+    width: 20px;
+    height: 20px;
+    background-size: cover;
+    margin-right: 8px;
+}
+.footer-box-2 p:nth-child(3):before{
+    background: url("assets/imagens/tt.png") no-repeat;
+    content: "";
+    display: flex;
+    width: 20px;
+    height: 20px;
+    background-size: cover;
+    margin-right: 8px;
+}
+/* ---------------------------------- Media Queries ----------------------------------- */
+@media screen and (max-width: 1100px){
+    .limitador-sessao{
+        width: 90%;
+    }
+}
+@media screen and (max-width: 768px) {
+    .button{
+        width: 100%;
+    }
+    .box-ofertas-imagens{
+        flex-direction: column;
+        height: 100%;
+    }
+    .box-quatro-imagens{
+        width: 100%;
+    }
+    .box-imagem-destaque, .box-quatro-imagens figure{
+        width: 100%;
+        height: 225px;
+        margin: 0;
+        margin-top: 15px;
+    }
+    .box-anuncio-duas-imagens{
+        display: block;
+    }
+    .box-anuncio{
+        width: 100%;
+        margin-top: 15px;
+    }
+    .footer-flex{
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+    }
+    .footer-area{
+        width: 250px;
+    }
+    .footer-area:nth-of-type(2){
+        margin-top: 20px;
+    }
+}
+@media screen and (max-width: 540px){
+    .box-dir-row, .boxradio-dir-row, .boxradio-dir-row{
+        flex-direction: column;
+    }
+    .box-dir-row div:nth-child(2){
+        margin-left: 0px;
+    }
+}
